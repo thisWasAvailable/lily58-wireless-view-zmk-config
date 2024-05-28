@@ -27,7 +27,7 @@
 &kp TAB         &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y          &kp U   &kp I      &kp O    &kp P     &kp MINUS
 &sk LEFT_SHIFT  &kp A   &kp S   &kp D     &kp F     &kp G                          &kp H          &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                &kp LALT  &kp LGUI  &mo 2   &kp SPACE    &kp RET   &kp BACKSPACE  &mo 3   &tog 1
+                                &kp LALT  &kp LGUI  &sl 2   &kp SPACE    &kp RET   &kp BACKSPACE  &sl 3   &tog 1
             >;
         };
 
@@ -37,7 +37,7 @@
 &kp TAB         &kp Q   &kp W   &kp F     &kp P     &kp B                           &kp J     &kp L   &kp U      &kp Y    &kp SEMI  &kp MINUS
 &sk LEFT_SHIFT  &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M     &kp N   &kp E      &kp I    &kp O     &kp APOS
 &kp LCTRL       &kp Z   &kp X   &kp C     &kp D     &kp V   &kp LBKT     &kp RBKT   &kp K     &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                &kp LALT  &kp LGUI  &mo 2   &kp SPACE    &kp ENTER  &kp BSPC  &mo 3   &tog 1
+                                &kp LALT  &kp LGUI  &sl 2   &kp SPACE    &kp ENTER  &kp BSPC  &sl 3   &tog 1
             >;
 
             label = "Colemak-DH";
@@ -59,8 +59,6 @@
 &trans      &trans        &trans        &trans        &trans        &trans        &out OUT_BLE    &out OUT_USB  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
                                         &trans        &trans        &trans        &trans          &trans        &trans     &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -79,17 +77,15 @@
 &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
                            &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans    &trans        &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans    &kp N7        &kp N8           &kp N9         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans    &kp N4        &kp N5           &kp N6         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans    &kp NUMBER_1  &kp N2           &kp N3         &trans  &trans
-                        &trans  &trans  &trans  &trans    &kp ENTER  &kp BSPC  &kp KP_PLUS   &kp KP_SUBTRACT
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans    &kp KP_MULTIPLY  &kp KP_NUMBER_0  &kp KP_DIVIDE  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans    &kp N7           &kp N8           &kp N9         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans    &kp N4           &kp N5           &kp N6         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans    &kp NUMBER_1     &kp N2           &kp N3         &trans  &trans
+                        &trans  &trans  &trans  &trans    &kp ENTER  &kp BSPC  &kp KP_PLUS      &kp KP_SUBTRACT
             >;
 
             label = "Numpad";
